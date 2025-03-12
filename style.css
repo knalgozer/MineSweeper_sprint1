@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+td {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.covered {
+    background: #ccc;
+    cursor: pointer;
+}
+
+.mine {
+    background: red;
+}
