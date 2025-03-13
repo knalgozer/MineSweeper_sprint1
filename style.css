@@ -1,25 +1,82 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
-
-table {
+#board {
     border-collapse: collapse;
-    margin: auto;
+    margin: 20px auto;
+    border: 1px solid #000;
 }
 
-td {
+#board td {
     width: 30px;
     height: 30px;
     text-align: center;
-    font-weight: bold;
-}
-
-.covered {
-    background: #ccc;
+    vertical-align: middle;
+    border: 1px solid #000;
+    background-color: #c0c0c0;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
     cursor: pointer;
 }
 
-.mine {
-    background: red;
+#board td.marked {
+    background-color: red;
+    color: white;
+}
+
+#board td.revealed {
+    background-color: #e0e0e0;
+}
+
+#board td.mine {
+    background-color: yellow;
+    color: red;
+}
+
+#board td.revealed[data-mines-around="1"] {
+    color: blue;
+}
+
+#board td.revealed[data-mines-around="2"] {
+    color: green;
+}
+
+#board td.revealed[data-mines-around="3"] {
+    color: red;
+}
+
+#status {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#restart {
+    padding: 10px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#restart:hover {
+    background-color: #007B9A;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.game-container {
+    display: inline-block;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid #000;
 }
